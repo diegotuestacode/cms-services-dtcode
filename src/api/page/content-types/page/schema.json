@@ -4,7 +4,8 @@
   "info": {
     "singularName": "page",
     "pluralName": "pages",
-    "displayName": "page"
+    "displayName": "page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -43,7 +44,7 @@
         }
       },
       "type": "string",
-      "required": true
+      "required": false
     },
     "description1": {
       "pluginOptions": {
@@ -52,7 +53,7 @@
         }
       },
       "type": "text",
-      "required": true
+      "required": false
     },
     "title2": {
       "pluginOptions": {
@@ -61,7 +62,7 @@
         }
       },
       "type": "string",
-      "required": true
+      "required": false
     },
     "description2": {
       "pluginOptions": {
@@ -70,7 +71,7 @@
         }
       },
       "type": "text",
-      "required": true
+      "required": false
     },
     "description3": {
       "pluginOptions": {
@@ -79,7 +80,7 @@
         }
       },
       "type": "text",
-      "required": true
+      "required": false
     },
     "lists": {
       "type": "relation",

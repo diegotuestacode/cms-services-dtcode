@@ -427,7 +427,6 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
         };
       }>;
     labelCTA: Schema.Attribute.String &
-      Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -590,6 +589,7 @@ export interface ApiDataGlobalDataGlobal extends Struct.CollectionTypeSchema {
 export interface ApiListList extends Struct.CollectionTypeSchema {
   collectionName: 'lists';
   info: {
+    description: '';
     displayName: 'list';
     pluralName: 'lists';
     singularName: 'list';
@@ -688,6 +688,7 @@ export interface ApiMenuMenu extends Struct.CollectionTypeSchema {
 export interface ApiPagePage extends Struct.CollectionTypeSchema {
   collectionName: 'pages';
   info: {
+    description: '';
     displayName: 'page';
     pluralName: 'pages';
     singularName: 'page';
@@ -713,21 +714,18 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     description1: Schema.Attribute.Text &
-      Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
     description2: Schema.Attribute.Text &
-      Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
     description3: Schema.Attribute.Text &
-      Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -745,14 +743,12 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
       }>;
     publishedAt: Schema.Attribute.DateTime;
     title1: Schema.Attribute.String &
-      Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
     title2: Schema.Attribute.String &
-      Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
